@@ -1,3 +1,1 @@
-app.get('/', function (req, res) {
-  res.send('Hello Azure, This is Node.js!')
-})
+  console.log('Example app listening on port 3000!')
