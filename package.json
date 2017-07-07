@@ -1,0 +1,13 @@
+{
+    "name": "Azure-Node js Sample",
+    "description": "Simple Hello World Node.js sample for Azure Web Apps",
+    "version": "0.0.1",
+    "private": true,
+    "author": "MegoCs",
+    "engines": {
+        "node": ">=6.9.1"
+    },
+    "scripts": {
+        "start": "node app.js"
+    }
+}

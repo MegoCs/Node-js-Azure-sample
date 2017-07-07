@@ -1,13 +1,13 @@
-const http = require('http');
+var http = require('http');
 
-const hostname = '127.0.0.1';
-const port = 2020;
+var server = http.createServer(function(request, response) {
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello Azure, This is Node.js');
+    response.writeHead(200, {"Content-Type": "text/plain"});
+    response.end("Hello Azure, This is Node Js!");
+
 });
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+
+var port = process.env.PORT || 80;
+server.listen(port);
+
+console.log("Server running at http://localhost:%d", port);
